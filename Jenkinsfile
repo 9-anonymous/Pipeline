@@ -12,8 +12,7 @@ pipeline {
             steps {
                 sh 'ls -a'
                 sh 'cd Pipeline'
-                sh 'ls -a'
-                sh 'cp $WORKSPACE/Pipeline/index.html /var/www/html/' // Use $WORKSPACE to refer to Jenkins workspace
+                sh 'cp ~/Documents/My-Pipeline/Pipeline/index.html /var/www/html/' // Use $WORKSPACE to refer to Jenkins workspace
             }
         }
     }
