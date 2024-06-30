@@ -12,7 +12,8 @@ pipeline {
             steps {
                 sh 'ls -a'
                 sh 'cd Pipeline'
-                sh 'cp ./index.html /var/www/html/'  // Adjust path as per your server configuration
+                sh 'ls -a'
+                sh 'cp $WORKSPACE/Pipeline/index.html /var/www/html/' // Use $WORKSPACE to refer to Jenkins workspace
             }
         }
     }
