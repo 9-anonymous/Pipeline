@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh 'ls -a'
                 sh 'cd Pipeline'
-                sh 'cp index.html /var/www/html/'  // Adjust path as per your server configuration
+                sh 'cp ./index.html /var/www/html/'  // Adjust path as per your server configuration
             }
         }
     }
