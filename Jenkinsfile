@@ -10,6 +10,7 @@ pipeline {
 
         stage('Build') {
             steps {
+                sh 'ls -a'
                 sh 'cp Pipeline/index.html /var/www/html/'  // Adjust path as per your server configuration
             }
         }
