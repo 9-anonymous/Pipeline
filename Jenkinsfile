@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'ls -a'
-                sh 'cp /Pipeline/index.html /var/www/html/'
+                sh 'echo "Hello"'
             }
         }
     }
